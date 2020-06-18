@@ -16,6 +16,8 @@
 		38F881AD2496C8F30042BA1B /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881AC2496C8F30042BA1B /* Onboarding2.swift */; };
 		38F881AF2496CEEC0042BA1B /* Onboarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881AE2496CEEC0042BA1B /* Onboarding3.swift */; };
 		38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881B02496DC370042BA1B /* Onboarding4.swift */; };
+		38F881B3249714DF0042BA1B /* Onboarding5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881B2249714DF0042BA1B /* Onboarding5.swift */; };
+		38F881B5249C17110042BA1B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881B4249C17110042BA1B /* HomeScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		38F881AC2496C8F30042BA1B /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
 		38F881AE2496CEEC0042BA1B /* Onboarding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3.swift; sourceTree = "<group>"; };
 		38F881B02496DC370042BA1B /* Onboarding4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4.swift; sourceTree = "<group>"; };
+		38F881B2249714DF0042BA1B /* Onboarding5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5.swift; sourceTree = "<group>"; };
+		38F881B4249C17110042BA1B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,9 @@
 				38F881AC2496C8F30042BA1B /* Onboarding2.swift */,
 				38F881AE2496CEEC0042BA1B /* Onboarding3.swift */,
 				38F881B02496DC370042BA1B /* Onboarding4.swift */,
+				38F881B2249714DF0042BA1B /* Onboarding5.swift */,
 				3856EE71249084DC0062D7AB /* LaunchScreen.storyboard */,
+				38F881B4249C17110042BA1B /* HomeScreen.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -172,8 +178,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				38F881AD2496C8F30042BA1B /* Onboarding2.swift in Sources */,
+				38F881B3249714DF0042BA1B /* Onboarding5.swift in Sources */,
 				3856EE67249084DA0062D7AB /* AppDelegate.swift in Sources */,
 				38F881AF2496CEEC0042BA1B /* Onboarding3.swift in Sources */,
+				38F881B5249C17110042BA1B /* HomeScreen.swift in Sources */,
 				38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */,
 				3856EE69249084DA0062D7AB /* SceneDelegate.swift in Sources */,
 				3856EE6B249084DA0062D7AB /* Onboarding.swift in Sources */,

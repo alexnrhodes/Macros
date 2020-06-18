@@ -10,8 +10,6 @@ import SwiftUI
 
 struct Onboarding: View {
     
-    @State var frame: CGSize = .zero
-    
     var body: some View {
         VStack() {
             Spacer()
