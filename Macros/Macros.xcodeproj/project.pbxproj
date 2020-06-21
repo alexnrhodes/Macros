@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881B02496DC370042BA1B /* Onboarding4.swift */; };
 		38F881B3249714DF0042BA1B /* Onboarding5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881B2249714DF0042BA1B /* Onboarding5.swift */; };
 		38F881B5249C17110042BA1B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881B4249C17110042BA1B /* HomeScreen.swift */; };
+		38F881DB249C2BE10042BA1B /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 38F881DA249C2BE10042BA1B /* SwiftUICharts */; };
+		38F881DE249C2D7C0042BA1B /* SunburstDiagram in Frameworks */ = {isa = PBXBuildFile; productRef = 38F881DD249C2D7C0042BA1B /* SunburstDiagram */; };
+		38F881E0249C36F60042BA1B /* CustomPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881DF249C36F60042BA1B /* CustomPlusButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,7 @@
 		38F881B02496DC370042BA1B /* Onboarding4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4.swift; sourceTree = "<group>"; };
 		38F881B2249714DF0042BA1B /* Onboarding5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5.swift; sourceTree = "<group>"; };
 		38F881B4249C17110042BA1B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		38F881DF249C36F60042BA1B /* CustomPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlusButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F881DE249C2D7C0042BA1B /* SunburstDiagram in Frameworks */,
+				38F881DB249C2BE10042BA1B /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +108,7 @@
 				38F881B2249714DF0042BA1B /* Onboarding5.swift */,
 				3856EE71249084DC0062D7AB /* LaunchScreen.storyboard */,
 				38F881B4249C17110042BA1B /* HomeScreen.swift */,
+				38F881DF249C36F60042BA1B /* CustomPlusButton.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -122,6 +129,10 @@
 			dependencies = (
 			);
 			name = Macros;
+			packageProductDependencies = (
+				38F881DA249C2BE10042BA1B /* SwiftUICharts */,
+				38F881DD249C2D7C0042BA1B /* SunburstDiagram */,
+			);
 			productName = Macros;
 			productReference = 3856EE63249084DA0062D7AB /* Macros.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +161,10 @@
 				Base,
 			);
 			mainGroup = 3856EE5A249084DA0062D7AB;
+			packageReferences = (
+				38F881D9249C2BE10042BA1B /* XCRemoteSwiftPackageReference "ChartView" */,
+				38F881DC249C2D7C0042BA1B /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */,
+			);
 			productRefGroup = 3856EE64249084DA0062D7AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,6 +197,7 @@
 				3856EE67249084DA0062D7AB /* AppDelegate.swift in Sources */,
 				38F881AF2496CEEC0042BA1B /* Onboarding3.swift in Sources */,
 				38F881B5249C17110042BA1B /* HomeScreen.swift in Sources */,
+				38F881E0249C36F60042BA1B /* CustomPlusButton.swift in Sources */,
 				38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */,
 				3856EE69249084DA0062D7AB /* SceneDelegate.swift in Sources */,
 				3856EE6B249084DA0062D7AB /* Onboarding.swift in Sources */,
@@ -378,6 +394,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38F881D9249C2BE10042BA1B /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+		38F881DC249C2D7C0042BA1B /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lludo/SwiftSunburstDiagram";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38F881DA249C2BE10042BA1B /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38F881D9249C2BE10042BA1B /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		38F881DD249C2D7C0042BA1B /* SunburstDiagram */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38F881DC249C2D7C0042BA1B /* XCRemoteSwiftPackageReference "SwiftSunburstDiagram" */;
+			productName = SunburstDiagram;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3856EE5B249084DA0062D7AB /* Project object */;
 }
