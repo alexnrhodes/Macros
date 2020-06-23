@@ -12,6 +12,8 @@ import SunburstDiagram
 struct HomeScreen: View {
     
     @State var selected = 0
+    @State var overOrUnder = "over"
+    var caloriesOverOrUnder = 267
     
     let configuration = SunburstConfiguration(nodes: [
         Node(name: "", value: 70, backgroundColor: .systemBlue),
@@ -44,6 +46,13 @@ struct HomeScreen: View {
             // Pir Chart View
             ZStack() {
                 SunburstView(configuration: configuration)
+                
+                VStack(alignment: .center, spacing: 0) {
+                    Text("2200")
+                        .font(Font.custom("AvenirNext-Bold", size: 30))
+                    Text("calories")
+                        .font(Font.custom("AvenirNext-Medium", size: 12))
+                }
                 
                 VStack(alignment: .center, spacing: 0) {
                     Text("180")
@@ -92,11 +101,25 @@ struct HomeScreen: View {
                             .foregroundColor(Color.purple)
                             .accentColor(Color.purple)
                     }
-                }.padding(.leading, 50)
+                }.padding(30)
                 Spacer()
                 
             }
-    
+//            ZStack(alignment: .center) {
+//            RoundedRectangle(cornerRadius: 0)
+//                .frame(width: UIScreen.screenWidth, height: 50, alignment: .center)
+//                .foregroundColor(Color.gray.opacity(0.3))                .padding(.bottom, -14.5)
+//
+//                HStack(alignment: .center) {
+//                    Text("You were \(caloriesOverOrUnder) \(overOrUnder) your goal for today.")
+//                    .font(Font.custom("AvenirNext-Medium", size: 10))
+//                   Spacer()
+//                    Text("Fat")
+//                    .font(Font.custom("AvenirNext-Medium", size: 14))
+//                }.padding()
+//            }
+            
+            // Bottom Bar
             VStack{
                          
                            ZStack(alignment: .top) {
@@ -114,7 +137,7 @@ struct HomeScreen: View {
                                    
                                }.background(Color.green)
                                .clipShape(Circle())
-                               .offset(y: -32)
+                               .offset(y: -10)
                                .shadow(radius: 5)
                                
                            }
