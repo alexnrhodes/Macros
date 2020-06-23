@@ -23,6 +23,8 @@
 		38F881E2249EE4590042BA1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38F881E1249EE4590042BA1B /* GoogleService-Info.plist */; };
 		38F881E7249EE8300042BA1B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881E6249EE8300042BA1B /* Login.swift */; };
 		38F881E9249FE38B0042BA1B /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881E8249FE38B0042BA1B /* Register.swift */; };
+		38F881ED249FEB7F0042BA1B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881EC249FEB7F0042BA1B /* Profile.swift */; };
+		38F881EF24A1595F0042BA1B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881EE24A1595F0042BA1B /* Settings.swift */; };
 		5CEB3B1E50201FD7CDB54865 /* Pods_Macros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B039687AA5AD0A887AF4E987 /* Pods_Macros.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		38F881E1249EE4590042BA1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38F881E6249EE8300042BA1B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		38F881E8249FE38B0042BA1B /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		38F881EC249FEB7F0042BA1B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		38F881EE24A1595F0042BA1B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		773512B0B7038A226C0BCDE5 /* Pods-Macros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macros.debug.xcconfig"; path = "Target Support Files/Pods-Macros/Pods-Macros.debug.xcconfig"; sourceTree = "<group>"; };
 		A266AB243D13C9FC66354F53 /* Pods-Macros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macros.release.xcconfig"; path = "Target Support Files/Pods-Macros/Pods-Macros.release.xcconfig"; sourceTree = "<group>"; };
 		B039687AA5AD0A887AF4E987 /* Pods_Macros.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macros.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +128,9 @@
 			children = (
 				38F881E5249EE7B50042BA1B /* Onboarding */,
 				3856EE71249084DC0062D7AB /* LaunchScreen.storyboard */,
-				38F881B4249C17110042BA1B /* HomeScreen.swift */,
+				38F881EB249FEA6C0042BA1B /* Tabs */,
 				38F881EA249FE4840042BA1B /* Login */,
+				38F881F024A2AB0E0042BA1B /* Settings */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -149,6 +154,23 @@
 				38F881E8249FE38B0042BA1B /* Register.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		38F881EB249FEA6C0042BA1B /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				38F881B4249C17110042BA1B /* HomeScreen.swift */,
+				38F881EC249FEB7F0042BA1B /* Profile.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		38F881F024A2AB0E0042BA1B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				38F881EE24A1595F0042BA1B /* Settings.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		FFA7991390E616BEF10D183B /* Frameworks */ = {
@@ -289,8 +311,10 @@
 				38F881AF2496CEEC0042BA1B /* Onboarding3.swift in Sources */,
 				38F881E9249FE38B0042BA1B /* Register.swift in Sources */,
 				38F881B5249C17110042BA1B /* HomeScreen.swift in Sources */,
+				38F881EF24A1595F0042BA1B /* Settings.swift in Sources */,
 				38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */,
 				38F881E7249EE8300042BA1B /* Login.swift in Sources */,
+				38F881ED249FEB7F0042BA1B /* Profile.swift in Sources */,
 				3856EE69249084DA0062D7AB /* SceneDelegate.swift in Sources */,
 				3856EE6B249084DA0062D7AB /* Onboarding.swift in Sources */,
 			);
