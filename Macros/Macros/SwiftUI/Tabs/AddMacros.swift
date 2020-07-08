@@ -37,7 +37,7 @@ struct AddMacros: View {
                   .frame(width: UIScreen.screenWidth * 0.8, height: 40, alignment: .center)
               Button(action: {}) {
                   HStack(alignment: .center, spacing: 10) {
-                      Text("Login")
+                      Text("Done")
                           .foregroundColor(Color.white)
                           .font(Font.custom("AvenirNext-Bold", size: 14))
                       
