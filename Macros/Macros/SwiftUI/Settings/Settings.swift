@@ -18,58 +18,45 @@ struct Settings: View {
     var body: some View {
         ScrollView(.vertical) {
             VStack(spacing: 0) {
-                ZStack(alignment: .leading) {
-                    RoundedRectangle(cornerRadius: 0)
-                        .frame(width: UIScreen.screenWidth, height: 50, alignment: .center)
-                        .foregroundColor(Color.gray.opacity(0.3))
-                    
-                    Text("MY ACCOUNT")
-                        .font(Font.custom("AvenirNext-Bold", size: 10))
-                        .foregroundColor(Color.gray)
-                        .padding([.top, .leading])
-                }
+                
+                // ACCOUNT SETTINGS
+                CustomSettingBar(content: "MY ACCOUNT")
+                
                 VStack(spacing: 0) {
                     ForEach(0..<accountSettings.count) {
                         CustomRow(content: self.accountSettings[$0])
+                        RoundedRectangle(cornerRadius: 0)
+                            .frame(width: UIScreen.screenWidth, height: 0.25, alignment: .center)
+                            .foregroundColor(Color.gray.opacity(0.3))
                     }
                     
-                }.padding([.leading, .trailing])
-                
-                ZStack(alignment: .leading) {
-                    RoundedRectangle(cornerRadius: 0)
-                        .frame(width: UIScreen.screenWidth, height: 50, alignment: .center)
-                        .foregroundColor(Color.gray.opacity(0.3))
-                    
-                    Text("SUPPORT")
-                        .font(Font.custom("AvenirNext-Bold", size: 10))
-                        .foregroundColor(Color.gray)
-                        .padding([.top, .leading])
                 }
+                
+                // SUPPORT SETTINGS
+                CustomSettingBar(content: "SUPPORT")
+                
                 
                 VStack(spacing: 0) {
                     ForEach(0..<supportSettings.count) {
                         CustomRow(content: self.accountSettings[$0])
+                        RoundedRectangle(cornerRadius: 0)
+                            .frame(width: UIScreen.screenWidth, height: 0.25, alignment: .center)
+                            .foregroundColor(Color.gray.opacity(0.3))
                     }
                     
-                }.padding([.leading, .trailing])
-                
-                ZStack(alignment: .leading) {
-                    RoundedRectangle(cornerRadius: 0)
-                        .frame(width: UIScreen.screenWidth, height: 50, alignment: .center)
-                        .foregroundColor(Color.gray.opacity(0.3))
-                    
-                    Text("FEEDBACK")
-                        .font(Font.custom("AvenirNext-Bold", size: 10))
-                        .foregroundColor(Color.gray)
-                        .padding([.top, .leading])
                 }
+                
+               CustomSettingBar(content: "FEEDBACK")
                 
                 VStack(spacing: 0) {
                     ForEach(0..<feedbackSettings.count) {
                         CustomRow(content: self.accountSettings[$0])
+                        RoundedRectangle(cornerRadius: 0)
+                            .frame(width: UIScreen.screenWidth, height: 0.25, alignment: .center)
+                            .foregroundColor(Color.gray.opacity(0.3))
                     }
                     
-                }.padding([.leading, .trailing])
+                }
             }
         }
     }
@@ -92,10 +79,27 @@ struct CustomRow: View {
                 Image(systemName: "chevron.right")
                     .font(.headline)
             }
-        }
-        .foregroundColor(content == "Custom Rows!" ? Color.green : Color.primary)
-        .font(.title)
-        .padding([.top, .bottom])
+        }.padding([.leading, .trailing])
+            .foregroundColor(content == "Custom Rows!" ? Color.green : Color.primary)
+            .font(.title)
+            .padding([.top, .bottom])
     }
     
+}
+
+struct CustomSettingBar: View {
+    var content: String
+    var body: some View {
+        ZStack(alignment: .leading) {
+            RoundedRectangle(cornerRadius: 0)
+                .frame(width: UIScreen.screenWidth, height: 50, alignment: .center)
+                .foregroundColor(Color.gray.opacity(0.3))
+            
+            Text(content)
+                .font(Font.custom("AvenirNext-Bold", size: 10))
+                .foregroundColor(Color.gray)
+                .padding([.top, .leading])
+        }
+        
+    }
 }

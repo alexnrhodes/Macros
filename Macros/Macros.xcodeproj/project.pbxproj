@@ -13,6 +13,7 @@
 		3856EE6D249084DC0062D7AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3856EE6C249084DC0062D7AB /* Assets.xcassets */; };
 		3856EE70249084DC0062D7AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3856EE6F249084DC0062D7AB /* Preview Assets.xcassets */; };
 		3856EE73249084DC0062D7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3856EE71249084DC0062D7AB /* LaunchScreen.storyboard */; };
+		385AAE9024A2AE4300E49136 /* AddMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AAE8F24A2AE4300E49136 /* AddMacros.swift */; };
 		38F881AD2496C8F30042BA1B /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881AC2496C8F30042BA1B /* Onboarding2.swift */; };
 		38F881AF2496CEEC0042BA1B /* Onboarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881AE2496CEEC0042BA1B /* Onboarding3.swift */; };
 		38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881B02496DC370042BA1B /* Onboarding4.swift */; };
@@ -37,6 +38,7 @@
 		3856EE6F249084DC0062D7AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3856EE72249084DC0062D7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3856EE74249084DC0062D7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385AAE8F24A2AE4300E49136 /* AddMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMacros.swift; sourceTree = "<group>"; };
 		38F881AC2496C8F30042BA1B /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
 		38F881AE2496CEEC0042BA1B /* Onboarding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3.swift; sourceTree = "<group>"; };
 		38F881B02496DC370042BA1B /* Onboarding4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			children = (
 				38F881B4249C17110042BA1B /* HomeScreen.swift */,
 				38F881EC249FEB7F0042BA1B /* Profile.swift */,
+				385AAE8F24A2AE4300E49136 /* AddMacros.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				38F881EF24A1595F0042BA1B /* Settings.swift in Sources */,
 				38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */,
 				38F881E7249EE8300042BA1B /* Login.swift in Sources */,
+				385AAE9024A2AE4300E49136 /* AddMacros.swift in Sources */,
 				38F881ED249FEB7F0042BA1B /* Profile.swift in Sources */,
 				3856EE69249084DA0062D7AB /* SceneDelegate.swift in Sources */,
 				3856EE6B249084DA0062D7AB /* Onboarding.swift in Sources */,
