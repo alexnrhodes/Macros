@@ -14,6 +14,8 @@
 		3856EE70249084DC0062D7AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3856EE6F249084DC0062D7AB /* Preview Assets.xcassets */; };
 		3856EE73249084DC0062D7AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3856EE71249084DC0062D7AB /* LaunchScreen.storyboard */; };
 		385AAE9024A2AE4300E49136 /* AddMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AAE8F24A2AE4300E49136 /* AddMacros.swift */; };
+		389ADDE124BE44A70062C06B /* MacroSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389ADDE024BE44A70062C06B /* MacroSet.swift */; };
+		389ADDE424BE44EC0062C06B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389ADDE324BE44EC0062C06B /* User.swift */; };
 		38F881AD2496C8F30042BA1B /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881AC2496C8F30042BA1B /* Onboarding2.swift */; };
 		38F881AF2496CEEC0042BA1B /* Onboarding3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881AE2496CEEC0042BA1B /* Onboarding3.swift */; };
 		38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F881B02496DC370042BA1B /* Onboarding4.swift */; };
@@ -39,6 +41,8 @@
 		3856EE72249084DC0062D7AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3856EE74249084DC0062D7AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		385AAE8F24A2AE4300E49136 /* AddMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMacros.swift; sourceTree = "<group>"; };
+		389ADDE024BE44A70062C06B /* MacroSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroSet.swift; sourceTree = "<group>"; };
+		389ADDE324BE44EC0062C06B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		38F881AC2496C8F30042BA1B /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
 		38F881AE2496CEEC0042BA1B /* Onboarding3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3.swift; sourceTree = "<group>"; };
 		38F881B02496DC370042BA1B /* Onboarding4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		3856EE65249084DA0062D7AB /* Macros */ = {
 			isa = PBXGroup;
 			children = (
+				389ADDE224BE44BA0062C06B /* Models */,
 				38F881AA2495CD550042BA1B /* Resources */,
 				38F881AB2495CD660042BA1B /* SwiftUI */,
 				3856EE6E249084DC0062D7AB /* Preview Content */,
@@ -112,6 +117,15 @@
 				3856EE6F249084DC0062D7AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		389ADDE224BE44BA0062C06B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				389ADDE024BE44A70062C06B /* MacroSet.swift */,
+				389ADDE324BE44EC0062C06B /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		38F881AA2495CD550042BA1B /* Resources */ = {
@@ -311,10 +325,12 @@
 				38F881AD2496C8F30042BA1B /* Onboarding2.swift in Sources */,
 				38F881B3249714DF0042BA1B /* Onboarding5.swift in Sources */,
 				3856EE67249084DA0062D7AB /* AppDelegate.swift in Sources */,
+				389ADDE124BE44A70062C06B /* MacroSet.swift in Sources */,
 				38F881AF2496CEEC0042BA1B /* Onboarding3.swift in Sources */,
 				38F881E9249FE38B0042BA1B /* Register.swift in Sources */,
 				38F881B5249C17110042BA1B /* HomeScreen.swift in Sources */,
 				38F881EF24A1595F0042BA1B /* Settings.swift in Sources */,
+				389ADDE424BE44EC0062C06B /* User.swift in Sources */,
 				38F881B12496DC370042BA1B /* Onboarding4.swift in Sources */,
 				38F881E7249EE8300042BA1B /* Login.swift in Sources */,
 				385AAE9024A2AE4300E49136 /* AddMacros.swift in Sources */,
